@@ -13,9 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBAction func numbers(_ sender: UIButton) {
-        
+    //    print(sender.tag)
+        label.text = label.text! + String(sender.tag - 1)
         
     }
+    
+    @IBAction func buttons(_ sender: UIButton) {
+     //   if ()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
